@@ -10,7 +10,7 @@ Example:
 java -jar original-teamcity-configurator-1.0-beta1.jar -u http://teamcityserver/ -n admin -p verysecretadminpassword
 ```
 
-** Important note
+### Important note
 
 This tool doesn't configure the database because that can be done using database.properties and maintainDb.sy (note this 
 must be done before starting the server).
