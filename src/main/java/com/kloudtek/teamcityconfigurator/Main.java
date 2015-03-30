@@ -14,6 +14,7 @@ public class Main {
     public static void main(String[] args) throws SetupException {
         ConfigureTeamcity configure = new ConfigureTeamcity();
         JCommander jc = new JCommander(configure);
+        jc.setProgramName("teamcity-configurator");
         if( args.length > 0 ) {
             try {
                 jc.parse(args);

@@ -26,8 +26,10 @@ public class ConfigureTeamcity {
     private int timeout = 10000;
     @Parameter(names = {"-wt", "--wait-timeout"}, description = "How long to wait for server to be ready")
     private long waitTimeout = 3 * 60000L;
-    private String adminUsername = "admin";
-    private String adminPassword = "admin";
+    @Parameter(names = {"-n"}, description = "Username for the admin account to be created on teamcity",required = true)
+    private String adminUsername;
+    @Parameter(names = {"-p"}, description = "Password for the admin account to be created on teamcity",required = true)
+    private String adminPassword;
     private boolean debug = false;
 
     public void execute() throws SetupException {
