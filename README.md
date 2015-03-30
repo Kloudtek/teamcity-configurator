@@ -7,5 +7,5 @@ Usage: java -jar original-teamcity-configurator-[version].jar [options]
 Example:
 
 ```
-java -jar original-teamcity-configurator-1.0-beta1.jar -n http://teamcityserver/ -n admin -p verysecretadminpassword
+java -jar original-teamcity-configurator-1.0-beta1.jar -u http://teamcityserver/ -n admin -p verysecretadminpassword
 ```
